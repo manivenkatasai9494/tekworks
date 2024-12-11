@@ -1,1 +1,1 @@
-print("mani")
+print(-10//3)
