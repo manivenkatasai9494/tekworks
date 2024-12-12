@@ -9,23 +9,30 @@ class Bank:
 
         match operation:
             case 1:
-                print("1st")
+                depositAmount = int(input("Enter the Amount to be Deposited = "))
+                self.totalBalance = self.totalBalance+depositAmount
             case 2:
-                print("1st")
-
+                withdrawAmount = int(input("Enter The Withdraw Amount"))
+                self.totalBalance = self.totalBalance - withdrawAmount
             case 3:
-                print("1st")
+                print(f"Total Amount In the Account is = {self.totalBalance}")
 
             case 0:
-                print("1st")
+                exit()
 
     def Validation(self):
-        pinNumber = int(input("Enter Pin Number  = "))
         correctPin = 1234
-        if correctPin == pinNumber:
-            obj.viewOptions()
-        else:
-            print("Invalid Pin Number")
+        for i in range (1,4):
+            pinNumber = int(input("Enter Pin Number  = "))
+            if correctPin == pinNumber:
+                obj.viewOptions()
+                exit()
+            else:
+                print("Enter  Pin Number once")
+        if pinNumber != correctPin:
+            print("out of ATM")
+
+
 
 
 obj = Bank()
