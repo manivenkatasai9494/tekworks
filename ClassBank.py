@@ -15,6 +15,9 @@ class Bank:
         obj.viewOptions()
 
     def Withdraw(self):
+
+        if self.transaction <=3:
+            withdrawAmount = int(input("Enter the withdraw Amount = "))
         if withdrawAmount >100 and (withdrawAmount %100) ==0 and withdrawAmount <self.totalBalance and self.totalBalance >=500 and withdrawAmount <=20000 and self.transaction <=3:
             self.totalBalance = self.totalBalance - withdrawAmount
             self.transaction = self.transaction + 1
