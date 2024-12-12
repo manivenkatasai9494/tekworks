@@ -3,7 +3,6 @@ internalMarks = int(input("Enter Internal Marks = "))
 ExternalMarks = int(input("Enter External Marks = "))
 totalMarks = 0
 
-#all subs sould get  print as failed in external score is 45 like this not
 
 if projectMarks >= 50 and internalMarks >= 50 and ExternalMarks >=50 :
     totalMarks = projectMarks*(70/100) + internalMarks * (10/100) + ExternalMarks * (20/100)

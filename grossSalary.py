@@ -12,9 +12,3 @@ else:
     DA = basicSalary * (89 / 100)
 GrossSalary = HRA+DA+basicSalary
 print(f"Total Gross Salary = {GrossSalary}")
-#==================================================================================
-basicSalary = int(input("Enter Basic Salary = "))
-HRA, DA = (basicSalary * 0.67, basicSalary * 0.73) if basicSalary < 10000 else \
-          (basicSalary * 0.69, basicSalary * 0.76) if basicSalary <= 20000 else \
-          (basicSalary * 0.73, basicSalary * 0.89)
-print(f"Total Gross Salary = {basicSalary + HRA + DA}")

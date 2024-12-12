@@ -1,43 +1,47 @@
 class Bank:
-    totalBalance=0
-    transaction =0
+    totalBalance = 0
+    transaction = 0
+    withdrawCount = 0  
+
     def Deposit(self):
         depositAmount = int(input("Enter the Amount to be Deposited = "))
-        if depositAmount >=100 and (depositAmount % 100) == 0 and depositAmount <=50000:
+        if depositAmount >= 100 and (depositAmount % 100) == 0 and depositAmount <= 50000:
             self.totalBalance = self.totalBalance + depositAmount
 
-        if depositAmount <100:
+        if depositAmount < 100:
             print("You Have Entered less than RS.100")
-        if (depositAmount %100) != 0:
+        if (depositAmount % 100) != 0:
             print("The amount is not multiples of 100")
-        if depositAmount >50000:
+        if depositAmount > 50000:
             print("You have Entered more than 50k")
         obj.viewOptions()
 
     def Withdraw(self):
+        if self.withdrawCount >= 3:
+            print("You have reached the maximum withdrawal limit of 3.")
+            obj.viewOptions()
+            return
 
-        if self.transaction <=3:
-            withdrawAmount = int(input("Enter the withdraw Amount = "))
-        if withdrawAmount >100 and (withdrawAmount %100) ==0 and withdrawAmount <self.totalBalance and self.totalBalance >=500 and withdrawAmount <=20000 and self.transaction <=3:
+        withdrawAmount = int(input("Enter the withdraw Amount = "))
+        if withdrawAmount > 100 and (withdrawAmount % 100) == 0 and withdrawAmount <= self.totalBalance and self.totalBalance >= 500 and withdrawAmount <= 20000:
             self.totalBalance = self.totalBalance - withdrawAmount
-            self.transaction = self.transaction + 1
-        if self.transaction >=3:
-             print("You have choosed morethan 3 Transactions ")
-             self.viewOptions()
+            self.withdrawCount += 1  
+            self.transaction += 1  
+            print(f"Withdrawal successful  new balance is {self.totalBalance}")
+        else:
+            if withdrawAmount < 100:
+                print("withdrawAmount should be greater than 100")
+            if (withdrawAmount % 100) != 0:
+                print("The withdrawal amount was not multiples of 100")
+            if withdrawAmount > self.totalBalance:
+                print("Withdrawal money was greater than total balance")
+            if self.totalBalance <= 500:
+                print("Total Balance was Less Than RS.500")
+            if withdrawAmount >= 20000:
+                print("Withdrawal amount was greater than 20000")
 
-        if withdrawAmount < 100:
-            print("withdrawAmount should be greater than 100")
-        if (withdrawAmount % 100) != 0:
-            print("The withdrawal amount was not multiples of 100")
-        if withdrawAmount > self.totalBalance:
-            print("Withdrawal money was greater than total balanace")
-        if self.totalBalance <= 500:
-            print("Total Balance was Less Than RS.500")
-        if withdrawAmount >= 20000:
-            print("Withdrawal amount was greater than 20000")
-        if self.transaction > 3:
-            print("You have used 3 Transaction in the Login")
         obj.viewOptions()
+
     def displayTotalBalance(self):
         print("Total Amount In the Account is =", self.totalBalance)
         obj.viewOptions()
@@ -56,24 +60,23 @@ class Bank:
                     self.Withdraw()
                 case 3:
                     self.displayTotalBalance()
-
                 case 0:
                     exit()
                 case _:
-                    print("Invalid choice, please try again.")
+                    print("Invalid choice  try again.")
                     operation = int(input("Enter operation = "))
-
 
     def Validation(self):
         correctPin = 1234
-        for i in range (1,4):
-            pinNumber = int(input("Enter Pin Number  = "))
+        for i in range(1, 4):
+            pinNumber = int(input("Enter Pin Number = "))
             if correctPin == pinNumber:
                 obj.viewOptions()
                 exit()
             else:
-                print("Enter  Pin Number once")
+                print("Enter Pin Number once more")
         if pinNumber != correctPin:
-            print("out of ATM")
+            print("Out of ATM")
+
 obj = Bank()
 obj.Validation()
