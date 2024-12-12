@@ -1,24 +1,65 @@
 class Bank:
     totalBalance=0
+    transaction =0
+    def Deposit(self):
+        depositAmount = int(input("Enter the Amount to be Deposited = "))
+        if depositAmount >=100 and (depositAmount % 100) == 0 and depositAmount <=50000:
+            self.totalBalance = self.totalBalance + depositAmount
+
+        if depositAmount <100:
+            print("You Have Entered less than RS.100")
+        if (depositAmount %100) != 0:
+            print("The amount is not multiples of 100")
+        if depositAmount >50000:
+            print("You have Entered more than 50k")
+        obj.viewOptions()
+
+    def Withdraw(self):
+        if withdrawAmount >100 and (withdrawAmount %100) ==0 and withdrawAmount <self.totalBalance and self.totalBalance >=500 and withdrawAmount <=20000 and self.transaction <=3:
+            self.totalBalance = self.totalBalance - withdrawAmount
+            self.transaction = self.transaction + 1
+        if self.transaction >=3:
+             print("You have choosed morethan 3 Transactions ")
+             self.viewOptions()
+
+        if withdrawAmount < 100:
+            print("withdrawAmount should be greater than 100")
+        if (withdrawAmount % 100) != 0:
+            print("The withdrawal amount was not multiples of 100")
+        if withdrawAmount > self.totalBalance:
+            print("Withdrawal money was greater than total balanace")
+        if self.totalBalance <= 500:
+            print("Total Balance was Less Than RS.500")
+        if withdrawAmount >= 20000:
+            print("Withdrawal amount was greater than 20000")
+        if self.transaction > 3:
+            print("You have used 3 Transaction in the Login")
+        obj.viewOptions()
+    def displayTotalBalance(self):
+        print("Total Amount In the Account is =", self.totalBalance)
+        obj.viewOptions()
+
     def viewOptions(self):
         print("1.Deposit")
         print("2.Withdraw")
         print("3.Bal Enquiry")
         print("0.Exit")
         operation = int(input("enter operation = "))
+        while True:
+            match operation:
+                case 1:
+                    self.Deposit()
+                case 2:
+                    self.Withdraw()
+                case 3:
+                    self.displayTotalBalance()
 
-        match operation:
-            case 1:
-                depositAmount = int(input("Enter the Amount to be Deposited = "))
-                self.totalBalance = self.totalBalance+depositAmount
-            case 2:
-                withdrawAmount = int(input("Enter The Withdraw Amount"))
-                self.totalBalance = self.totalBalance - withdrawAmount
-            case 3:
-                print(f"Total Amount In the Account is = {self.totalBalance}")
+                case 0:
+                    exit()
+                case _:
+                    print("Invalid choice, please try again.")
+                    operation = int(input("Enter operation = "))
 
-            case 0:
-                exit()
 
     def Validation(self):
         correctPin = 1234
@@ -31,9 +72,5 @@ class Bank:
                 print("Enter  Pin Number once")
         if pinNumber != correctPin:
             print("out of ATM")
-
-
-
-
 obj = Bank()
 obj.Validation()
