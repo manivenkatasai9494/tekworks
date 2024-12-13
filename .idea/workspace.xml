@@ -5,14 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="710f3b8c-20b3-46eb-8f48-39f753410662" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/StreamBankApplication.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/StreamExpenseTracker.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/StreamGrossSalary.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/streamEvenOdd.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/tekworks.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/tekworks.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/toLeran.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/strmm.py" beforeDir="false" afterPath="$PROJECT_DIR$/strmm.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -94,5 +88,16 @@
       <updated>1734019399987</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
