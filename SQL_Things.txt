@@ -1,0 +1,42 @@
+create database cvr;
+use cvr;
+create table student(Sno int , Sname varchar(20) , marks int, city varchar(20),mobileNumber varchar(15),gender varchar(10));
+
+
+insert into student values (1,"Mani venkata Sai",100,"Hyderabad","9494059447","male");
+insert into student values (2,"sai teja",87,"pune","98885497756","female");
+insert into student values (3,"saharsh",70,"Secunderabad","9494059","male");
+insert into student values (4,"Teja",98,"Hyderabad","949405","female");
+insert into student values (5," venkata Sai",95,"pune","85296355","male");
+insert into student values (6,"SManiS",75,"pune","777777777","female");
+insert into student values (7,"venkata",87,"pune","765474756","female");
+insert into student values (8,"SManiSaiA",81,"erabad","52211212","male");
+
+
+select * from student;
+
+select *  from student where city='pune';
+select *  from student where city='pune' or  city='Hyderabad' ;
+
+select * from student where (city = 'Hyderabad' and gender ='female') or (city = 'pune' and gender = 'male')  ;
+select * from student where (city ='Hyderabad' and gender = 'male' and  marks >70 )  or (city ='Hyderabad' and gender = 'female' and  marks >50 ) ;
+select * from student where (city ='Hyderabad' or city = 'pune') and  (marks between 50 and 80);
+select * from student where Sname like "S%A";
+
+SELECT city, COUNT(*) AS number_of_students FROM student GROUP BY city;
+
+SELECT city, AVG(marks) AS average_score
+FROM student
+GROUP BY city
+ORDER BY average_score DESC
+LIMIT 1;
+
+
+SELECT city, MAX(marks) AS top_score
+FROM student
+GROUP BY city;
+
+SELECT *
+FROM student
+WHERE city = 'Hyderabad'
+  AND marks = (SELECT MAX(marks) FROM student WHERE city = 'Hyderabad');
