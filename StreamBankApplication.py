@@ -39,7 +39,6 @@ class Bank:
                 st.write("Total Balance was Less Than RS.500")
             if withdrawAmount >= 20000:
                 st.write("Withdrawal amount was greater than 20000")
-
         obj.viewOptions()
 
     def displayTotalBalance(self):
