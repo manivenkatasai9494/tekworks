@@ -40,3 +40,8 @@ SELECT *
 FROM student
 WHERE city = 'Hyderabad'
   AND marks = (SELECT MAX(marks) FROM student WHERE city = 'Hyderabad');
+.
+
+
+
+=================================================================================================
