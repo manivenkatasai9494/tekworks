@@ -1,7 +1,5 @@
 import mysql.connector
 from tabulate import tabulate
-
-# Connect to MySQL database
 connection = mysql.connector.connect(
     host="localhost",
     user="root",
@@ -10,13 +8,10 @@ connection = mysql.connector.connect(
 )
 
 cursor = connection.cursor()
-
 cursor.execute("SELECT * FROM student;")
 rows = cursor.fetchall()
 headers = ["Sno", "Sname", "Marks", "City", "MobileNumber", "Gender"]
 
 print(tabulate(rows, headers, tablefmt="grid"))
-
-
 cursor.close()
 connection.close()
