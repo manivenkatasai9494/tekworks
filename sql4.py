@@ -24,3 +24,4 @@ students=mycursor.fetchall();
 for std in students:
   print(std)
 mydb.commit()
+
