@@ -1,6 +1,6 @@
-import mysql.connector
+import mysql.connector as c
 from tabulate import tabulate
-connection = mysql.connector.connect(
+connection = c.connect(
     host="localhost",
     user="root",
     password="1234",
