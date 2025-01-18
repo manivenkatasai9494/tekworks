@@ -1,0 +1,10 @@
+1.Prediction house pricing (ML model predicting house)
+2.Predicting the match winning % cricket (bowling batting,all things)
+3.predicting the attrition rate of a company how many leaving company,Traing the new people,
+4.getting suggestions like helping in Financial things,helping orgns,utilities,savings,
+5.Personalized course Recommendation---- ML model give diffre5t paramters like learing attitude course lagging,every things should be given
+6.Food Recipes Recom ----To Based on nutrition level,
+       7.Travel Plan Suggestion with reasonable  --> Traveller Should Give based on adventure , accom , budget ,
+8.Reels or Posts virality prediction, insights for betterment
+       9.traffic accident severity prediction
+10. Fake NEWS prediction
