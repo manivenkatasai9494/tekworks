@@ -1,0 +1,14 @@
+Data Visualization
+===================
+data visualizing in the bar graphs
+visualizing teh pictorial form ,going to
+
+Basic library is matplotlib -->> we need to install the matplotlib
+========>>>>> Line charts ,bar charts,labels , axes , Histograms , Area Plot ,Hexagonal Bin Plot , Pie Plot.
+==========>>> pip install matplotlib
+==========>>> import matplotlib.pylot as plt
+
+
+
+univarient -> display frequency , median,common visualizations
+bivariate -> Heatmap,Lineplot,H
