@@ -11,4 +11,9 @@ Basic library is matplotlib -->> we need to install the matplotlib
 
 
 univarient -> display frequency , median,common visualizations
-bivariate -> Heatmap,Lineplot,H
+bivariate -> {
+    Relation between 2 variables when we taken students (a,b,c),  study hours(2,4,3) ,marks got (50,90,80)
+    by based on above two variables x--->axis is study hours and y - axis is marks got to them
+    Heatmap,Lineplot,H
+
+}
