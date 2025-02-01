@@ -5,11 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="710f3b8c-20b3-46eb-8f48-39f753410662" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/DV/eda.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DV/eda.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DV/edaa.ipynb.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DV/coffeDataset.csv" beforeDir="false" afterPath="$PROJECT_DIR$/DV/coffeDataset.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projects.txt" beforeDir="false" afterPath="$PROJECT_DIR$/projects.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DV/eda.py" beforeDir="false" afterPath="$PROJECT_DIR$/DV/eda.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,7 +52,7 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
   }
 }</component>
-  <component name="RunManager" selected="Python.eda">
+  <component name="RunManager" selected="Python.edaa.ipynb">
     <configuration name="CarSQL" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="tekworks" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -97,7 +95,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="sql1" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="edaa.ipynb" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="tekworks" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -105,11 +103,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/DV" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/sql1.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/DV/edaa.ipynb.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -162,11 +160,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.edaa.ipynb" />
         <item itemvalue="Python.eda" />
         <item itemvalue="Python.CarSQL" />
         <item itemvalue="Python.sqlMenuDriver" />
         <item itemvalue="Python.sql4" />
-        <item itemvalue="Python.sql1" />
       </list>
     </recent_temporary>
   </component>
