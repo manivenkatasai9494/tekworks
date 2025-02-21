@@ -14,4 +14,58 @@ https://github.com/Nagul-Tekworks/Python-Db1/blob/main/Assignment-Uber.ipynb
 http://tinyurl.com/2hx35wmz
 http://tinyurl.com/34yvup37
 
-Mani_dataset_datasetname
+Strategies for regulating firewalls in Cloud Platforms
+
+http://tinyurl.com/yaavjtbc
+
+Mani_dataset_datasetname  
+
+1. GlobalSupply Corp, a leading distributor managing a vast inventory of products across multiple dealers located in various geographic locations, faces challenges in efficiently tracking and managing stock levels. Manual tracking methods and fragmented data reporting result in inventory discrepancies, irregular stock consumption, and potential risks of stockouts or over-accumulation. 
+To address these issues, GlobalSupply Corp aims to develop an AI-Driven Inventory Management System that will streamline daily updates of inventory data and enable predictive risk analysis for stock management. 
+Core Features of the System: 
+Inventory Data Management: 
+Create, update, and manage daily inventory data for multiple products across different dealers. 
+Centralized dashboard for real-time inventory visibility across all locations. 
+Dealer-Specific Stock Analysis: 
+Track consumption patterns for each dealer. 
+Detect irregularities in stock movement, such as sudden spikes or drops in stock levels. 
+Risk Prediction and Alerts: 
+Predict the risk of stockouts or over-accumulation based on historical usage patterns and trends. 
+Generate early warnings and alerts for high-risk scenarios. 
+Usage Pattern Analysis: 
+Analyze past data to identify seasonality and trends in product demand. 
+Forecast future inventory requirements based on consumption behavior. 
+Geographic Insights: 
+Assess regional stock patterns and demand fluctuations. 
+Optimize stock distribution across locations to avoid shortages or surpluses. 
+Business Goal: 
+The primary objective is to build an AI-powered Inventory Management System that tracks, updates, and analyzes inventory data, providing actionable insights to reduce risks and improve stock availability across all dealers. This will help the organization optimize inventory levels, reduce operational costs, and enhance dealer satisfaction. 
+2. SocialPulse Analytics, a leading social media intelligence platform, seeks to build a system that tracks user interactions such as likes, dislikes, comments, and shares on social media posts. Each post is enriched with metadata, including actor details, emotions, topics, and other contextual information. The goal is to help the client gain deep insights into user engagement and sentiment trends. 
+Business Goal: 
+Develop a Social Media Post Tracking System that can track, analyze, and report user interactions in real time. This system will provide actionable insights into engagement patterns, audience sentiment, and content performance. 
+Core Features of the System: 
+Interaction Tracking: 
+Track likes, dislikes, comments, shares, and reactions for each post in real time. 
+Monitor engagement across multiple social media platforms. 
+Metadata Collection and Analysis: 
+Collect metadata such as actor (user details), emotion (positive, neutral, negative sentiment), and topic (content category). 
+Analyze how different metadata attributes affect user engagement and sentiment. 
+Sentiment Analysis: 
+Use Natural Language Processing (NLP) to determine the sentiment of comments and captions. 
+Classify comments into categories like positive, negative, or neutral. 
+Trend Detection: 
+Identify trending topics and viral posts based on interaction volume. 
+Generate alerts for rapid engagement changes. 
+Engagement and Influence Metrics: 
+Calculate engagement rates, user influence scores, and content performance metrics. 
+Provide detailed insights into top-performing posts and key influencers. 
+Topic Clustering and Emotion Mapping: 
+Cluster posts by topic to detect user preferences. 
+Map emotions associated with each post to identify audience mood patterns. 
+Influencing Factors: 
+Post Content: Content quality, relevance, and format (text, image, video) affect engagement. 
+Time of Posting: Timing plays a crucial role in interaction rates (e.g., higher engagement during specific hours or days). 
+Actor Influence: Posts by influencers or verified users often receive higher engagement. 
+Emotion in Content: Emotional posts (positive or negative) attract more interactions. 
+Current Events and Trends: Trending topics tend to generate more reactions. 
+User rns: Individual user preferences and habits affect how they interact with content. 
